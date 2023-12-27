@@ -6,6 +6,44 @@
 * License: https://bootstrapmade.com/license/
 */
 
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #CDA45E;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.flex_comprobante{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 10px; */
+  
+}
+
+.container_imagen_comprobante{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.imagen_comprobante{
+  max-height: 600px;
+}
+
+.flex_list_comprobante{
+  flex-grow: 1;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
