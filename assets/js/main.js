@@ -5,6 +5,38 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+function getCustomForm(){
+  var tipoGasto = document.getElementById("tipoGasto");
+  var motivoComprobante = document.getElementById("motivoComprobante");
+  var sectionComprobante = document.getElementById("sectionComprobante");
+  if(tipoGasto.value == "No")
+  {
+    motivoComprobante.hidden = false;
+    sectionComprobante.hidden = true;
+  }
+  else if(tipoGasto.value == "Si")
+  {
+    motivoComprobante.hidden = true;
+    sectionComprobante.hidden = false;
+  }
+  else
+  {
+    motivoComprobante.hidden = true;
+    sectionComprobante.hidden = true;
+  }
+}
+
+function repetirCadaSegundo() {
+  RefresoInfoCambioPieza = setInterval(getCustomForm, 1000);
+}
+
+repetirCadaSegundo();
+
+///////////////////////////////////////////////////////////////////////////////////////
+
 (function() {
   "use strict";
 
